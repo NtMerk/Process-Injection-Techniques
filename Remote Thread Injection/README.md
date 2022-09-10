@@ -1,4 +1,4 @@
-## PE Injection
+## Remote Thread Injection
 This process injection technique inserts our payload into a desired process, and runs it spawning a new thread.
 It does so in the following manner:
 1. The desired process is found in the system using the APIs from the `tlhelp32.h` header.
