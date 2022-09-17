@@ -8,6 +8,6 @@ It does so in the following manner:
 5. The thread's context is set with the new RIP value (`SetThreadContext`) and the thread is resumed (`ResumeThread`).
 6. Finally, the payload is executed in by the thread at some point in time.
 
-Note: the payload in the code will spawn a calculator and promptly kill the process it was injected in.
+Note: the payload in the code will spawn a calculator and promptly kill the newly created process.
 
 Note x2: it would be of interest to craft a payload that preserves the thread's context after executing.
